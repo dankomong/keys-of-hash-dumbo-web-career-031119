@@ -4,8 +4,8 @@ class Hash
     arr = []
     # self refers to the object that owns the currently executing code
     self.each do |key, value|
-      arguments.each do |i|
-        if i == value
+      arguments.each do |arg|
+        if arg == value
           arr.push(key)
         end
       end 
